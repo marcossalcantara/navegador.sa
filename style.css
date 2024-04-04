@@ -10,17 +10,16 @@
     font-size: 62.5%;
 }
 
-html {
-    height: 100vh;
-}
-
 body {
     background-color: #050505;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+}
+
+aside img{
+    margin: 1.8rem;
 }
 
 aside {
@@ -36,20 +35,26 @@ footer {
     width: 100%;
     text-align: center;
     font-weight: lighter;
+    position: absolute;
+    bottom: 0;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
 }
 
 #photo {
     border-radius: 50%;
-    border: solid red .1rem;
-    padding: .3rem;
+    border: solid #F9062F .2rem;
+    padding: .6rem;
 }
 
 #principal {
@@ -58,8 +63,12 @@ main {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: .5rem;
+}
+
+#info{
+    font-size: 1.2rem;
 }
 
 .icon-social{
@@ -78,35 +87,33 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    width: 90%;
-    max-width: 30rem;
+    gap: 1.6rem;
+    width: 90vw;
+    max-width: 40rem;
 }
 
 li {
-    border: solid rgb(255, 0, 0, .25) .1rem;
+    border: solid white .1rem;
     width: 100%;
     display: flex;
     border-radius: 100rem;
-    transition: .2s;
-    height: 4rem;
-    border-radius: 2rem;
+    height: 6rem;
+    border-radius: 100rem;
 }
 
 .link {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: .2s;
     padding: 0 3rem;
-    border-radius: 2rem;
+    border-radius: 100rem;
 }
 
 .link:hover,
 li:hover {
     transform: scale(1.01);
-    transition: .3s;
+    border: solid .1rem #F9062F;
 }
