@@ -1,119 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Outfit", sans-serif;
-    box-sizing: border-box;
-    color: white;
-}
-
-:root {
-    font-size: 62.5%;
-}
-
-body {
-    background-color: #050505;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-aside img{
-    margin: 1.8rem;
-}
-
-aside {
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-    border-bottom: solid .1em rgb(255, 255, 255, .05);
-}
-
-footer {
-    padding: 1.5rem;
-    border-top: solid .1em rgb(255, 255, 255, .05);
-    width: 100%;
-    text-align: center;
-    font-weight: lighter;
-    position: absolute;
-    bottom: 0;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-}
-
-#photo {
-    border-radius: 50%;
-    border: solid #F9062F .2rem;
-    padding: .6rem;
-}
-
-#principal {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-size: 4rem;
-    margin-bottom: .5rem;
-}
-
-#info{
-    font-size: 1.2rem;
-}
-
-.icon-social{
-    width: 1.6rem;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6rem;
-    width: 90vw;
-    max-width: 40rem;
-}
-
-li {
-    border: solid white .1rem;
-    width: 100%;
-    display: flex;
-    border-radius: 100rem;
-    height: 6rem;
-    border-radius: 100rem;
-}
-
 .link {
-    font-size: 2rem;
-    text-decoration: none;
+    text-decoration: none !important;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;
-    border-radius: 100rem;
 }
 
-.link:hover,
-li:hover {
+.link:hover{
+    background-color:unset !important;
+    border: solid .1rem #dc3545;
+    transition: .05s;
     transform: scale(1.01);
-    border: solid .1rem #F9062F;
 }
